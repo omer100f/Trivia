@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"	
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px">
+	<ScrollView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/accent_material_dark"
+		android:id="@+id/ScrollView1">
+		<LinearLayout
+			android:orientation="vertical"
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"			
+			android:id="@+id/linearLayout1">
+			<TextView
+				android:text="Levels"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/levelsView"
+				android:gravity="center"
+				android:paddingTop="@dimen/abc_action_bar_content_inset_material"/>
+			<ImageButton
+				android:src="@android:drawable/btn_star"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/abc_action_bar_content_inset_material"
+				android:id="@+id/levelOneBtn" />
+			<ImageButton
+				android:src="@android:drawable/btn_star"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="@dimen/abc_action_bar_content_inset_material"
+				android:id="@+id/levelTwoBtn" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

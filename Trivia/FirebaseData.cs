@@ -45,7 +45,20 @@ namespace Trivia
                     .SetStorageBucket("")
                     .Build();
         }
+        public Task CreateUser(string email, string password)
+        {
+            return auth.CreateUserWithEmailAndPassword(email, password);
+        }
 
+        public Task SignIn(string email, string password)
+        {
+            return auth.SignInWithEmailAndPassword(email, password);
+        }
+
+        public void AddSnapshotListener(string cName, MainActivity activity)
+        {
+            firestore.Collection(cName).AddSnapshotListener(activity);
+        }
 
     }
 }
